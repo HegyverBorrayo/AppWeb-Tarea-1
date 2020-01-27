@@ -1,0 +1,60 @@
+$color-about: #9ec3f4;
+$color-study: #9ec2c8;
+$style-border: 3px solid #020202;
+$style-border-img: 2px solid #020202;
+$border-radius: 5px;
+$color-title: #151a21;
+$color-text: #000;
+
+.row {
+	margin: 0;
+}
+
+.container-divs{
+	& .about-me {
+		background: $color-about;
+		margin-top: 5%;
+		margin-bottom: 5%;
+		border: $style-border;
+		border-radius: $border-radius;
+
+		& .row {
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+	}
+
+	& .info {
+		margin-bottom: 5px;
+		font-size: 14px;
+		color: $color-text;
+	}
+
+	& .container-img {
+		& .img-thumbnail {
+			border: $style-border-img;
+			border-radius: 0;
+		}
+	}
+
+	& .study-ing {
+		background: $color-study;
+		border: $style-border;
+		border-radius: $border-radius;
+
+		& .row {
+			padding-top: 20px;
+			padding-bottom: 20px;
+		}
+	}
+
+	& .title {
+		color: $color-title;
+		font-weight: bold;
+	}
+
+	& .container-links {
+		margin-top: 3%;
+		margin-bottom: 3%;
+	}
+}
